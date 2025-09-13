@@ -1,0 +1,12 @@
+type Player {
+    id: ID!
+    name: String!
+    position: String
+    goals: Int!
+    team: Team!
+}
+
+extend type Query {
+    players: [Player!]!
+    playersByTeam(teamId: ID!): [Player!]!
+}

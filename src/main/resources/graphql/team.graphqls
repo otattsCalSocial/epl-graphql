@@ -7,4 +7,5 @@ type Team {
     id: ID!
     name: String!
     shortName: String!
+    players(limit: Int, sortBy: String): [Player!]!
 }
