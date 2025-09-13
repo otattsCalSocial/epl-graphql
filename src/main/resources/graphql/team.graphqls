@@ -1,9 +1,10 @@
 extend type Query {
-  teams: [Team!]!
+    teams: [Team!]!
+    team(id: ID!): Team
 }
 
 type Team {
-  id: ID!
-  name: String!
-  shortName: String!
+    id: ID!
+    name: String!
+    shortName: String!
 }
