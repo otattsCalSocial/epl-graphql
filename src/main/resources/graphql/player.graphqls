@@ -10,3 +10,17 @@ extend type Query {
     players: [Player!]!
     playersByTeam(teamId: ID!): [Player!]!
 }
+
+type PlayerSeasonStats {
+    gamesPlayed: Int!
+    minutesPlayed: Int!
+    goals: Int!
+}
+
+extend type Player {
+    seasonStats(season: String): PlayerSeasonStats!   # default to current season
+}
+
+extend type Query {
+    playersWhoPlayed(season: String, q: String): [Player!]!
+}

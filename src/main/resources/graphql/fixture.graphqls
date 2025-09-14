@@ -1,0 +1,16 @@
+type Fixture {
+    id: ID!
+    date: String!
+    season: String!
+    status: String!
+    home: Team!
+    away: Team!
+    homeGoals: Int!
+    awayGoals: Int!
+    resultFor(teamId: ID!): String!    # "W" | "D" | "L"
+}
+
+extend type Query {
+    matches(season: String): [Fixture!]!         # default to current season
+    teamMatches(teamId: ID!, season: String): [Fixture!]!
+}

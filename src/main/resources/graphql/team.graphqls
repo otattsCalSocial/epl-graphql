@@ -8,4 +8,5 @@ type Team {
     name: String!
     shortName: String!
     players(limit: Int, sortBy: String): [Player!]!
+    matches(season: String): [Fixture!]!
 }
