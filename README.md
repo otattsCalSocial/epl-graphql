@@ -41,10 +41,10 @@ cd epl-graphql
    ```sh
 ./mvnw spring-boot:run
 ```
-   The server will start on `http://localhost:8080`.
+   The server will start on `http://localhost:8081`.
 
 ### Accessing GraphQL Playground
-Visit `http://localhost:8080/graphiql` or `http://localhost:8080/graphql` to interact with the API.
+Visit `http://localhost:8081/graphiql` or `http://localhost:8081/graphql` to interact with the API.
 
 ## Example GraphQL Queries
 
