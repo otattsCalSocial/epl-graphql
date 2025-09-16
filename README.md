@@ -18,7 +18,6 @@ This project is a Java Spring Boot application that provides a GraphQL API for a
   - `graphql/` - GraphQL schema files
   - `application.properties` - Application configuration
   - `data.sql` - Initial data
-- `src/test/java/` - Unit and integration tests
 
 ## Getting Started
 
